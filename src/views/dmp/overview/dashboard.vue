@@ -40,7 +40,7 @@
             </a-col>
             <a-col :span="10"></a-col>
           </a-row>
-          <div class="head-title">点比分析</div>
+          <div class="head-title">占比分析</div>
           <a-row>
             <a-col :span="10">
               <Interval></Interval>

@@ -2,8 +2,11 @@
   <div class="number-card">
     <div class="item">
       <span>销售总收入</span>
-      <!-- <div><Tween num="{1000}" />元</div> -->
-      <div>11111</div>
+      <div class="money">
+        <span class="text">{{ money}}</span>
+		<span class="unte">元</span>
+		
+      </div>
       <div class="info"><span>周同比 </span><span>降56.65%</span></div>
       <a-popover title="销售总收入" overlayClassName="note">
         <template slot="content">
@@ -23,14 +26,17 @@ import IconSelector from '@/components/IconSelector'
 
 export default {
   components: { IconSelector },
-  data () {
-    return { data: [] }
+  data() {
+    return {
+      money: '14971.22',
+      data: [],
+    }
   },
-  methods: {}
+  methods: {},
 }
 </script>
 
-<style lang="less">
+<style lang="scss">
 .item {
   flex: 1;
   height: 150px;
@@ -41,10 +47,18 @@ export default {
   justify-content: space-between;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
 
-  > div {
+  .money {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+
+    .text {
+      font-size: 30px;
+	  color: #1e1e28;
+	  line-height: 34px;
+	  margin-right: 5px;
+    }
+
   }
 
   > span:not(.anticon) {

@@ -10,6 +10,11 @@ import i18n from './locales'
 import { VueAxios } from './utils/request'
 import ProLayout, { PageHeaderWrapper } from '@ant-design-vue/pro-layout'
 import themePluginConfig from '../config/themePluginConfig'
+
+// 添加 echarts 
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts
+
 // 数字跳动
 import countTo from 'vue-count-to'
 // element-ui
