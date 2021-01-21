@@ -7,7 +7,7 @@
 
 export default {
   data() {
-    return {
+    return {  
       //   data: [
       //     { type: '分类一', value: 20 },
       //     { type: '分类二', value: 18 },
